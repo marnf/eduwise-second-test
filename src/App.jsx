@@ -2,33 +2,43 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Home from './Pages/Home.jsx';
+import Experiment from './Components/Experiment.jsx';
+import RightNavigationBar from './Components/RightNavigationBar/RightNavigationBar.jsx';
+import LeftNavigationBar from './Components/LeftNavigationBar/LeftNavigationBar.jsx';
+import VideoPage from './Pages/VideoPage/VideoPage.jsx';
+import HoverCards from './Pages/HoverCards/HoverCards.jsx';
+import MoveObject from './Components/MoveObject/MoveObject.jsx';
+import GridRow from './Pages/GridRow/GridRow.jsx';
+import GridCols from './Pages/GridCols/GridCols.jsx';
+import InputForm from './Pages/InputForm/InputForm.jsx';
+
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+
+<InputForm></InputForm>
+
+      {/* <Home></Home>
+      <div className='flex'>
+        <div>
+          <VideoPage></VideoPage>
+          <HoverCards></HoverCards>
+          <GridRow></GridRow>
+          <MoveObject></MoveObject>
+          <GridCols></GridCols>
+        </div>
+        <div>
+          <RightNavigationBar></RightNavigationBar>
+
+        </div>
+      </div> */}
+    </div>
   )
 }
 

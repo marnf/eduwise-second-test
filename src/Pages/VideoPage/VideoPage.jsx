@@ -28,7 +28,7 @@ const VideoPage = () => {
 
                     {/* Video container */}
                     <div className="z-10 p-7 m-auto -top-32 absolute">
-                        <video className="m-auto rounded-2xl" width="600" height="700" controls>
+                        <video className="m-auto rounded-2xl" loop width="600" height="700" controls={true}>
                             <source src="your-video-url-here.mp4" type="video/mp4" />
                         </video>
                     </div>

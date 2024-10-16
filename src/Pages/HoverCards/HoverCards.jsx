@@ -182,19 +182,7 @@ const HoverCards = () => {
                         
                     </div>
                 </div>
-                <div className="bg-white  rounded-lg overflow-hidden transform transition-all duration-300 ">
-                    <div className="overflow-hidden rounded-xl bg-purple-200">
-                        <img
-                            className="w-full h-96 p-3 rounded-xl object-cover transform transition-transform duration-300 hover:-translate-y-2"
-                            src={pic1}
-                            alt="Sample Image 2"
-                        />
-                    </div>
-                    <div className="p-5">
-                        <h3 className="text-start font-bold text-xl">Card Title 2</h3>
-                        
-                    </div>
-                </div>
+                
 
             </div>
         </div>
